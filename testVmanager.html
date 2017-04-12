@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://v3.bootcss.com/assets/css/docs.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/vmanager.css">
+    <script src="https://unpkg.com/vue@2.2.6/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="supplier-title"><h2>供应商管理</h2></div>
+        <div class="select row">
+            <button class="col-md-1 btn btn-default">注册用户管理</button>
+            <button class="col-md-1 btn btn-default">供应商管理</button>
+            <button class="col-md-1 col-md-offset-9 btn btn-info">新增供应商</button>
+        </div>
+        <div class="input">
+            <div class="input-content">
+                <form class="form-inline form-horizontal">
+                    <div class="form-group col-md-8">
+                        <label class="input-sm" for="inputSupplierName">供应商名称</label>
+                        <input class="input-sm" type="text" class="form-control" id="inputSupplierName" placeholder="供应商名称">
+                        <label class="input-sm" for="inputSupplierPhone">联系电话</label>
+                        <input class="input-sm" type="text" class="form-control" id="inputSupplierPhone" placeholder="联系电话">
+                        <label class="input-sm" for="inputSupplierType">类型</label>
+                        <select class="input-sm form-control" id="inputSupplierType">
+                          <option value="good">商品</option>
+                          <option value="service">服务</option>
+                          <option value="goaway">外卖</option>
+                          <option value="">旅游</option>
+                        </select>
+                        <br>
+                        <label class="input-sm" for="inputSupplierName">账户名</label>
+                        <input class="input-sm" type="text" class="form-control" id="inputSupplierName" placeholder="供应商名称">
+                        <label class="input-sm" for="inputSupplierStatus">状态</label>
+                        <select class="input-sm form-control" id="inputSupplierStatus">
+                          <option value="all">全部</option>
+                          <option value="normal">正常</option>
+                          <option value="close">已封停</option>
+                        </select>
+                        <label for="input-enter-time" class="input-sm">入驻时间</label>
+                        <input type="date">
+                        <p class="form-control-static">~</p>
+                        <input type="date">
+                    </div>
+                    
+                    <div class="col-md-1 col-md-offset-2">
+                        <button class="btn btn-default btn-block">清除条件</button>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-default btn-block">清除条件</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <table class="table table-bordered">
+                <thead style="background:#ccc">
+                    <tr>
+                        <th>供应商名称</th>
+                        <th>账户名</th>
+                        <th>类型</th>
+                        <th>联系电话</th>
+                        <th>入驻时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>小白自营</td>
+                        <td>XXXXX</td>
+                        <td>商超</td>
+                        <td>18666666666</td>
+                        <td>2016-04-12 10:30:00</td>
+                        <td>正常</td>
+                        <td><input value="设置后台角色" type="button"><input value="查看" type="button"><input value="编辑" type="button"></td>
+                    </tr>
+                    <tr>
+                        <td>小白自营</td>
+                        <td>XXXXX</td>
+                        <td>商超</td>
+                        <td>18666666666</td>
+                        <td>2016-04-12 10:30:00</td>
+                        <td>正常</td>
+                        <td><input value="设置后台角色" type="button"><input value="查看" type="button"><input value="编辑" type="button"></td>
+                    </tr>
+                    <tr>
+                        <td>小白自营</td>
+                        <td>XXXXX</td>
+                        <td>商超</td>
+                        <td>18666666666</td>
+                        <td>2016-04-12 10:30:00</td>
+                        <td>正常</td>
+                        <td><input value="设置后台角色" type="button"><input value="查看" type="button"><input value="编辑" type="button"></td>
+                    </tr>
+                    <tr>
+                        <td>小白自营</td>
+                        <td>XXXXX</td>
+                        <td>商超</td>
+                        <td>18666666666</td>
+                        <td>2016-04-12 10:30:00</td>
+                        <td>正常</td>
+                        <td><input value="设置后台角色" type="button"><input value="查看" type="button"><input value="编辑" type="button"></td>
+                    </tr>
+                    <tr>
+                        <td>小白自营</td>
+                        <td>XXXXX</td>
+                        <td>商超</td>
+                        <td>18666666666</td>
+                        <td>2016-04-12 10:30:00</td>
+                        <td>正常</td>
+                        <td><input value="设置后台角色" type="button"><input value="查看" type="button"><input value="编辑" type="button"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page row">
+            <div class="col-lg-6 col-lg-offset-6">
+                <form action="#" class="form-inline form-horizontal">
+                    <div class="col-lg-4">
+                        <label class="input-sm" for="inputSupplierStatus">共108条，每页</label>
+                        <select class="input-sm form-control" id="input-page-count">
+                          <option value="all">20</option>
+                          <option value="normal">10</option>
+                          <option value="close">50</option>
+                        </select>
+                        <p class="form-control-static">条</p>
+                    </div>
+                    <div class="page-button col-lg-8">
+                        <input class="col-lg-1" value="1" type="button">
+                        <input class="col-lg-1" value="2" type="button">
+                        <input class="col-lg-1" value="..." type="button">
+                        <input class="col-lg-1" value="6" type="button">
+                        <div class="col-lg-3" style="border:1px solid #ccc;">
+                            <input class="col-lg-6" type="text" class="form-control">
+                            <p class="col-lg-6" class="form-control-static" style="white-space : nowrap 
+">/6页</p>
+                        </div>
+                        <input class="col-lg-3" type="button" value="下一页">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
