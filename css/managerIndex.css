@@ -1,0 +1,32 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.main {
+    margin-top: 52px;
+}
+
+.sidebar {
+    background: #ddd;
+    z-index: 1000;
+    position: fixed;
+    top: 52px;
+    bottom: 0;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #eee;
+}
+
+.nav-sidebar {
+    padding: 10px 0;
+}
+
+.nav-sidebar>.active>a {
+    color: #fff;
+    background-color: #428bca;
+}
+
+.pagelist {
+    margin-top: 10px;
+}
